@@ -109,6 +109,10 @@ Set these as environment variables (`setx NAME value`, then restart the agent):
 - **Claude says it isn't logged in** -- run `claude` in a terminal and log in.
 - The full log is at http://127.0.0.1:8420 while it runs.
 
+## License
+
+MIT -- see [LICENSE](LICENSE). Use it, change it, share it.
+
 ## For developers
 
     .venv\Scripts\python -m pytest -q voice-agent\tests      # offline, no keys needed
