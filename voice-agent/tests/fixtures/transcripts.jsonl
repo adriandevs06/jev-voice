@@ -1,0 +1,40 @@
+{"text": "open chrome", "expect": ["open_app:Google Chrome"], "brain": false, "note": "bare command"}
+{"text": "all right can you open up the notes app for me", "expect": ["open_app:Notepad"], "brain": false, "note": "andy gao demo, filler + tail"}
+{"text": "open up the notes app and once you're there can you create a new note and inside this new note let's make the title say hello", "expect": ["open_app:Notepad"], "brain": true, "note": "demo: the note creation is multi-step -> brain"}
+{"text": "great great okay let's move on and can you open up the arc browser", "expect": [], "brain": true, "note": "arc is not installed; brain says so"}
+{"text": "and once you're there can you google search norbert wiener", "expect": ["web_search:norbert wiener"], "brain": false, "note": "open slot, fires at the pause"}
+{"text": "now can you open up x dot com", "expect": ["open_url:https://x.com"], "brain": false, "note": "spoken url"}
+{"text": "nice nice okay now can you open up the photo booth", "expect": ["open_app:Camera"], "brain": false, "note": "alias photo booth -> Camera"}
+{"text": "and let's take a picture of me", "expect": [], "brain": true, "note": "in-app action -> brain (computer use)"}
+{"text": "cool awesome thank you", "expect": [], "brain": false, "note": "chatter, nothing"}
+{"text": "open chrome then search for cats then go to x dot com", "expect": ["open_app:Google Chrome", "web_search:cats", "open_url:https://x.com"], "brain": false, "note": "three-step chain, all primitives"}
+{"text": "open chrome and clear the history", "expect": ["open_app:Google Chrome"], "brain": true, "note": "app fires, the in-app half goes to the brain"}
+{"text": "open cursor and then open the terminal", "expect": ["open_app:Cursor", "open_app:Terminal"], "brain": false, "note": "and then connector"}
+{"text": "launch spotify", "expect": ["open_app:Spotify"], "brain": false, "note": "launch verb"}
+{"text": "bring up my code editor", "expect": ["open_app:Cursor"], "brain": false, "note": "needs Jev: no alias for code editor"}
+{"text": "open clawed", "expect": ["open_app:Claude"], "brain": false, "note": "whisper mis-hearing of claude"}
+{"text": "open devon", "expect": ["open_app:Devin"], "brain": false, "note": "whisper mis-hearing of devin"}
+{"text": "i should probably open chrome later", "expect": [], "brain": false, "note": "not a command (command noul)"}
+{"text": "did you google it", "expect": [], "brain": false, "note": "a question, not a command"}
+{"text": "what time is it", "expect": [], "brain": true, "note": "a question for the brain"}
+{"text": "type hello world", "expect": ["type_text:hello world"], "brain": false, "note": "open text slot"}
+{"text": "type sudo rm dash rf slash", "expect": [], "brain": true, "note": "irreversible: held by the code danger list, brain asks"}
+{"text": "press control plus t", "expect": ["press_keys:control+t"], "brain": false, "note": "shortcut"}
+{"text": "press alt f4", "expect": [], "brain": true, "note": "closes the window: held by the code danger list"}
+{"text": "switch to the chrome window", "expect": ["focus_window:chrome"], "brain": false, "note": "focus"}
+{"text": "go to github dot com slash anthropics", "expect": ["open_url:https://github.com/anthropics"], "brain": false, "note": "url with path"}
+{"text": "search the web for best ai ugc tools 2026", "expect": ["web_search:best ai ugc tools 2026"], "brain": false, "note": "long query"}
+{"text": "look up the weather in new york", "expect": ["web_search:the weather in new york"], "brain": false, "note": "look up verb"}
+{"text": "send tom a message saying i'm running late", "expect": [], "brain": true, "note": "sending is irreversible -> brain"}
+{"text": "delete the last three screenshots", "expect": [], "brain": true, "note": "delete -> brain"}
+{"text": "rename the last three screenshots by date", "expect": [], "brain": true, "note": "multi-step file work -> brain"}
+{"text": "open telegram and reply to the last message", "expect": ["open_app:Telegram"], "brain": true, "note": "first half fires, reply goes to brain"}
+{"text": "um so uh open the calculator", "expect": ["open_app:Calculator"], "brain": false, "note": "disfluencies"}
+{"text": "open the file explorer and go to downloads", "expect": ["open_app:File Explorer"], "brain": true, "note": "go to downloads is in-app navigation"}
+{"text": "play some music", "expect": [], "brain": true, "note": "unparsed, brain decides"}
+{"text": "open discord", "expect": ["open_app:Discord"], "brain": false, "note": "plain"}
+{"text": "open settings", "expect": ["open_app:Settings"], "brain": false, "note": "settings app (opening is reversible)"}
+{"text": "turn off the wifi", "expect": [], "brain": true, "note": "settings change -> brain"}
+{"text": "open chrome open cursor open discord", "expect": ["open_app:Google Chrome", "open_app:Cursor", "open_app:Discord"], "brain": false, "note": "no connectors: split at each new verb because each left part is a complete command"}
+{"text": "hey can you open notepad real quick", "expect": ["open_app:Notepad"], "brain": false, "note": "tail words"}
+{"text": "open a new tab", "expect": ["press_keys:ctrl+t"], "brain": false, "note": "a tab is a keystroke, not an app"}

@@ -1,0 +1,4 @@
+# Words the voice agent should hear correctly -- one word or phrase per line.
+# Put names, brands, and anything it keeps mishearing here (they get priority).
+# Only names help; command words ("open", "click") make recognition worse.
+# Takes effect the next time the voice agent starts.

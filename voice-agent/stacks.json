@@ -1,0 +1,24 @@
+{
+ "morning": [
+  {
+   "open_app": "Google Chrome"
+  },
+  {
+   "open_app": "Telegram"
+  },
+  {
+   "open_app": "Cursor"
+  }
+ ],
+ "research": [
+  {
+   "open_app": "Google Chrome"
+  },
+  {
+   "open_url": "x.com"
+  },
+  {
+   "open_url": "instagram.com"
+  }
+ ]
+}

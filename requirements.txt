@@ -1,0 +1,11 @@
+# The voice agent (Windows 10/11, Python 3.11 or newer).
+# setup.cmd installs these into .venv; screen control (windows-mcp) gets its
+# own environment in voice-agent\.venv-wm.
+faster-whisper>=1.2.1
+sounddevice>=0.5
+numpy>=2.0
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pynput>=1.8
+requests>=2.32
+pytest>=8

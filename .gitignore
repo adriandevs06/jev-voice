@@ -1,0 +1,21 @@
+# environments
+.venv/
+voice-agent/.venv-wm/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# everything the agent writes while you use it -- your speech, your apps, your research
+voice-agent/.voice.log*
+voice-agent/decisions.jsonl
+voice-agent/.jev_cache/
+voice-agent/.apps.json
+voice-agent/.brain_cwd/
+voice-agent/say.txt
+voice-agent/.voice_id
+voice-agent/calibration.json
+voice-finds/*
+!voice-finds/.gitkeep
+
+# the build marker (tools/make_share.py in the original project)
+.jev-share
